@@ -1,0 +1,54 @@
+.Top {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.TopLeft,
+.TopRight {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.TopCenter {
+  flex: 6;
+}
+
+/* avatar */
+.Avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+/* icon styles */
+.TopSearchIcon {
+  font-size: 18px;
+  counter-reset: #666;
+  cursor: pointer;
+  margin-left: 15px;
+}
+.TopIcon {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #444;
+  cursor: pointer;
+}
+.TopList {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.TopListItem {
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+}
