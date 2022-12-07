@@ -1,3 +1,6 @@
+// custom config
+import { DEFAULT_IMG_URL } from '../../config'
+
 // custom styles
 import styles from './header.module.css'
 function Header(props) {
@@ -11,11 +14,7 @@ function Header(props) {
         <span className={styles.HeaderTitleLg}>Blog</span>
       </div>
       {/* image */}
-      <img
-        className={styles.HeaderImg}
-        src="https://lsh-images.oss-cn-hangzhou.aliyuncs.com/common-images/c5398839880411ebb6edd017c2d2eca2.jpg"
-        alt=""
-      />
+      <img className={styles.HeaderImg} src={DEFAULT_IMG_URL} alt="" />
     </div>
   )
 }

@@ -1,14 +1,13 @@
+// custom config
+import { DEFAULT_IMG_URL } from '../../../config'
+
 // custom styles
 import styles from './post.module.css'
 function Post(props) {
   return (
     <div className={styles.Post}>
       {/* img */}
-      <img
-        className={styles.PostImg}
-        src="https://lsh-images.oss-cn-hangzhou.aliyuncs.com/common-images/p4.jpg"
-        alt=""
-      />
+      <img className={styles.PostImg} src={DEFAULT_IMG_URL} alt="" />
       {/* info */}
       <div className={styles.PostInfo}>
         {/* categorys */}
@@ -51,7 +50,5 @@ function Post(props) {
     </div>
   )
 }
-
-Post.propTypes = {}
 
 export default Post

@@ -1,3 +1,6 @@
+// custom config
+import { DEFAULT_IMG_URL } from '../../config'
+
 // custom styles
 import styles from './topBar.module.css'
 const TopBar = (props) => {
@@ -22,11 +25,7 @@ const TopBar = (props) => {
       </div>
       {/* right */}
       <div className={styles.TopRight}>
-        <img
-          className={styles.Avatar}
-          src="https://lsh-images.oss-cn-hangzhou.aliyuncs.com/common-images/c5398839880411ebb6edd017c2d2eca2.jpg"
-          alt=""
-        />
+        <img className={styles.Avatar} src={DEFAULT_IMG_URL} alt="" />
         <i
           className={` ${styles.TopSearchIcon} fa-solid fa-magnifying-glass`}
         ></i>

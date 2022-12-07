@@ -1,0 +1,49 @@
+.Login {
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url('https://images.pexels.com/photos/12560816/pexels-photo-12560816.jpeg');
+  background-size: cover;
+}
+.LoginTitle {
+  font-size: 50px;
+  font-family: 'Raleway', sans-serif;
+}
+.LoginForm {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.LoginForm > label {
+  margin: 10px 0;
+}
+.LoginInput {
+  padding: 10px;
+  background-color: white;
+}
+.LoginBtn {
+  cursor: pointer;
+  background-color: lightcoral;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 10px;
+}
+.RegisterBtn {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: teal;
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+}

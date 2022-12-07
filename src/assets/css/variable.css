@@ -1,0 +1,15 @@
+:root {
+  /* topbar */
+  --_topbar_height: 50px;
+
+  /* avatar */
+  --_img_width: 40px;
+  --_img_height: 40px;
+
+  /* font size */
+  --_font_size_tiny: 12px;
+  --_font_size_small: 14px;
+  --_font_size_middle: 16px;
+  --_font_size_big: 18px;
+  --_font_size_larger: 20px;
+}

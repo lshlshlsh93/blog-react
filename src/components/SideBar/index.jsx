@@ -1,3 +1,6 @@
+// custom config
+import { DEFAULT_IMG_URL } from '../../config'
+
 // custom styles
 import styles from './sideBar.module.css'
 function SideBar() {
@@ -7,11 +10,7 @@ function SideBar() {
 
       <div className={styles.SideBarItem}>
         <span className={styles.SideBarTitle}>About me</span>
-        <img
-          className={styles.SideBarImg}
-          src="https://lsh-images.oss-cn-hangzhou.aliyuncs.com/common-images/97b97ee1173042d5ba667df7ecbe43f6.png"
-          alt=""
-        />
+        <img className={styles.SideBarImg} src={DEFAULT_IMG_URL} alt="" />
         <p>
           Apparently we had reached a great height in the atmosphere, for the
           sky was a dead black, and the stars had ceased to twinkle. I could see
