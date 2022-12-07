@@ -1,6 +1,3 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-
 // custom styles
 import styles from './topBar.module.css'
 const TopBar = (props) => {
@@ -37,7 +34,5 @@ const TopBar = (props) => {
     </div>
   )
 }
-
-TopBar.propTypes = {}
 
 export default TopBar
