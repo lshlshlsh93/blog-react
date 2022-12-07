@@ -7,6 +7,7 @@
   position: sticky;
   top: 0;
   font-family: 'Josefin Sans', sans-serif;
+  z-index: 999;
 }
 
 .TopLeft,

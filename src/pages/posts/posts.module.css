@@ -1,3 +1,7 @@
-.Post {
-  flex: 9;
+.Posts {
+  display: flex;
+  flex: 8;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 35px;
 }
