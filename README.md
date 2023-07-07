@@ -1,70 +1,199 @@
-# Getting Started with Create React App
+# 介绍
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+这是我的毕设项目--基于 springboot 下的个人博客系统
 
-In the project directory, you can run:
+# 选用技术
 
-### `npm start`
+## 前端技术
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- react 18.x
+- react-redux
+- @reduxjs/toolkit
+- react-router-dom 6.x
+- react-icons
+- for-editor
+- react-toastify
+- semantic-ui-react
+- slick-carousel
+- validator
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# 项目目录结构
 
-### `npm test`
+```
+blog-ui
+├─ .gitignore
+├─ package-lock.json
+├─ package.json
+├─ public
+│  ├─ favicon.ico
+│  └─ index.html
+├─ README.md
+└─ src
+   ├─ api
+   │  ├─ article.js
+   │  └─ data
+   │     └─ category.js
+   ├─ App.js
+   ├─ assets
+   │  ├─ icons
+   │  └─ images
+   │     ├─ a.png
+   │     ├─ blog.png
+   │     ├─ error.jpg
+   │     ├─ o.jpg
+   │     ├─ sky.jpg
+   │     └─ Upload.png
+   ├─ components
+   │  ├─ Card
+   │  │  ├─ card.module.css
+   │  │  └─ index.jsx
+   │  ├─ Category
+   │  │  ├─ category.module.css
+   │  │  └─ index.jsx
+   │  ├─ Dropdown
+   │  │  ├─ dropdown.module.css
+   │  │  └─ index.jsx
+   │  ├─ Footer
+   │  │  ├─ footer.module.css
+   │  │  └─ index.jsx
+   │  ├─ Header
+   │  │  ├─ header.module.css
+   │  │  └─ index.jsx
+   │  ├─ Logo
+   │  │  └─ index.jsx
+   │  ├─ Nav
+   │  │  ├─ index.jsx
+   │  │  ├─ nav.js
+   │  │  └─ nav.module.css
+   │  ├─ NoAuth
+   │  │  └─ index.jsx
+   │  ├─ NoData
+   │  │  └─ index.jsx
+   │  ├─ Profile
+   │  │  ├─ index.jsx
+   │  │  └─ profile.module.css
+   │  ├─ Progress
+   │  │  ├─ index.jsx
+   │  │  └─ progress.module.css
+   │  ├─ Table
+   │  │  ├─ index.jsx
+   │  │  └─ table.module.css
+   │  └─ UploadFile
+   │     ├─ index.jsx
+   │     └─ uploadFile.module.css
+   ├─ constants
+   │  ├─ common
+   │  │  ├─ cdnConstants.js
+   │  │  ├─ index.js
+   │  │  ├─ responseCodeConstants.js
+   │  │  └─ systemConstans.js
+   │  └─ index.js
+   ├─ context
+   │  └─ userContext.js
+   ├─ hooks
+   │  ├─ api
+   │  │  ├─ index.js
+   │  │  └─ useLogs.js
+   │  ├─ content
+   │  │  ├─ index.js
+   │  │  ├─ useFetch.js
+   │  │  ├─ useInput.js
+   │  │  └─ usePageQuery.js
+   │  └─ index.js
+   ├─ index.js
+   ├─ router
+   │  ├─ index.js
+   │  ├─ otherBoundary.jsx
+   │  └─ rootBoundary.jsx
+   ├─ setupProxy.js
+   ├─ store
+   │  ├─ reducer
+   │  │  └─ index.js
+   │  └─ slice
+   │     ├─ auth.js
+   │     ├─ category.js
+   │     ├─ index.js
+   │     └─ message.js
+   ├─ style
+   │  └─ index.css
+   ├─ utils
+   │  ├─ cache
+   │  │  ├─ index.js
+   │  │  ├─ localStorage.js
+   │  │  └─ sessionStorage.js
+   │  ├─ common
+   │  │  ├─ common.js
+   │  │  ├─ index.js
+   │  │  ├─ page.js
+   │  │  └─ validator.js
+   │  └─ index.js
+   └─ views
+      ├─ About
+      │  ├─ about.module.css
+      │  └─ index.jsx
+      ├─ Account
+      │  ├─ account.module.css
+      │  └─ index.jsx
+      ├─ Archives
+      │  └─ index.jsx
+      ├─ Article
+      │  └─ index.jsx
+      ├─ Category
+      │  ├─ category.module.css
+      │  └─ index.jsx
+      ├─ Create
+      │  ├─ create.module.css
+      │  └─ index.jsx
+      ├─ Detail
+      │  ├─ detail.module.css
+      │  └─ index.jsx
+      ├─ Error
+      │  └─ 404.jsx
+      ├─ ForgetPassword
+      │  ├─ forgetPassword.module.css
+      │  ├─ index.jsx
+      │  ├─ newPassword.jsx
+      │  └─ verify.jsx
+      ├─ Home
+      │  ├─ home.module.css
+      │  └─ index.jsx
+      ├─ Login
+      │  ├─ index.jsx
+      │  └─ login.module.css
+      ├─ NewPost
+      │  └─ index.jsx
+      ├─ Register
+      │  ├─ index.jsx
+      │  └─ register.module.css
+      ├─ sysOpLogs
+      │  └─ index.jsx
+      └─ Tag
+         ├─ index.jsx
+         └─ tag.module.css
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
 
-### `npm run build`
+# 功能模块
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 注册
+- 登录
+- 修改密码
+  - 修改密码需要系统存在账户
+- 文章增删改查模块
+- 热门文章模块（利用 redis 的 lua 表达式来定时更新浏览量）
+- 文章分类模块
+- 文章标签模块
+- 系统日志模块
+- 个人信息展示
+- 关于我
+  ...
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# 待改善
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- 将接口调用全部替换为 hooks 函数
+- 加入文章评论功能
+- 优化页面加载速度
+- 提取部分内容作为组件
+- ...

@@ -1,0 +1,27 @@
+header {
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgb(0 0 0 /8%);
+  position: relative;
+  z-index: 44;
+}
+header .active {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 0 4px 0 rgb(115 115 115 /20%);
+}
+
+nav ul {
+  display: flex;
+}
+li {
+  margin-left: 20px;
+}
+
+nav a {
+  text-transform: capitalize;
+  margin-right: 30px;
+  color: #000;
+}

@@ -1,0 +1,23 @@
+.AccountInfo {
+  margin: 50px 50px;
+}
+.Container {
+  padding: 50px;
+  max-width: 80%;
+  margin: auto;
+  height: 500px;
+}
+
+.Img img {
+  width: 75px;
+  height: 75px;
+  z-index: 1;
+  border-radius: 50%;
+  margin: 35px 0;
+}
+
+.Right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}

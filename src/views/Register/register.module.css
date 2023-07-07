@@ -1,0 +1,12 @@
+.Register {
+  /* height: calc(100vh - var(--_topbar_height)); */
+  height: 100vh;
+  display: flex;
+  background: url('../../assets/images/sky.jpg');
+  background-size: cover;
+}
+
+.RegisterForm {
+  margin-top: 90px;
+  width: 30%;
+}

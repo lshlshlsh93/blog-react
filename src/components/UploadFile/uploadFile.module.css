@@ -1,0 +1,36 @@
+.Container {
+  width: 350px;
+  height: 350px;
+}
+.UploadArea {
+  width: 350px;
+  height: 350px;
+  left: 32px;
+  top: 27px;
+  position: absolute;
+  z-index: 99;
+}
+.UploadArea input {
+  width: 100%;
+  height: 100%;
+  /* 把input透明度设置为0，隐藏掉type=file时自带选择框 */
+  opacity: 0;
+}
+.ImgShowArea {
+  width: 350px;
+  height: 350px;
+  left: 32px;
+  top: 27px;
+  position: absolute;
+  background: url('../../assets/images/Upload.png') no-repeat center/cover;
+}
+.ImgShowArea img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.Progress {
+  width: 50%;
+  height: 30px;
+  margin: 10px 0;
+}

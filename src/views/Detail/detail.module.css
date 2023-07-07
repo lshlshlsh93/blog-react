@@ -1,0 +1,68 @@
+.SinglePost {
+  padding: 5px;
+  background: #eee;
+}
+.SinglePost h1 {
+  font-size: 30px;
+  font-weight: 500;
+}
+.SinglePost p {
+  margin: 20px 0;
+  font-size: 18px;
+  line-height: 2;
+  text-transform: capitalize;
+}
+.Center {
+  margin: 70px;
+}
+.Center h1 {
+  margin-left: 35px;
+}
+/* 缩略图开始 */
+.Thumbnail {
+  height: 100px;
+  width: 100px;
+  margin-left: 650px;
+}
+.Thumbnail img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+/* 缩略图结束 */
+
+/* icons */
+.Icons {
+  /* border: #ee5253 1px solid; */
+  width: 600px;
+  margin: 25px 450px;
+}
+.Icons span {
+  margin-left: 5px;
+}
+.Icon {
+  margin: 15px;
+}
+
+.Icon span {
+  margin-right: 20px;
+}
+
+/* .Icons span:first-child {
+  margin-left: 35px;
+} */
+
+/* content */
+.ContentContainer {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.Content {
+  width: 800px;
+  margin-left: 165px;
+}
+.Nav {
+  display: block;
+}

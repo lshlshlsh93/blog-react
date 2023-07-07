@@ -1,0 +1,19 @@
+.Nav {
+  width: calc(100% - 240px); /* 计算宽度 */
+  height: 60px;
+  background-color: #696969;
+  display: flex;
+  align-items: center;
+  padding: 0 120px;
+}
+.Main {
+  width: 100%;
+  min-height: 400px;
+  background-color: white;
+}
+
+.Footer {
+  width: 100%;
+  min-height: 400px;
+  background-color: #222;
+}

@@ -1,0 +1,56 @@
+.Blog {
+  margin: 10px;
+}
+.Container {
+  max-width: 50%;
+  margin: auto;
+}
+.Blog .boxItems {
+  transition: 0.5s;
+}
+.Blog .boxItems:hover {
+  box-shadow: 0 2px 4px rgb(0 0 0 /8%);
+  cursor: pointer;
+}
+.Blog img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.Icon {
+  margin-right: 10px;
+  font-size: 20px;
+}
+.Tag a {
+  color: blue;
+  opacity: 0.7;
+}
+.Link {
+  color: #000;
+}
+.Tag {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.Blog h3 {
+  font-weight: 500;
+}
+.Blog p {
+  color: #999;
+  font-weight: 400;
+  margin: 20px 0;
+  font-size: 17px;
+  line-height: 25px;
+}
+.Date {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
+.Date label {
+  display: block;
+  margin-right: 8px;
+}

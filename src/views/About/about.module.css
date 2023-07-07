@@ -1,0 +1,60 @@
+.Container {
+  width: 100%;
+  background: #c5f5c3;
+}
+.TitleWrap {
+  position: relative;
+}
+.TitleWrap h1 {
+  padding-bottom: 15px;
+  color: hsl(0deg 0% 100%);
+}
+.Title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 5px;
+  background: linear-gradient(
+    to right,
+    hsl(45, 100%, 72%),
+    hsl(35, 100%, 68%)
+  ) !important;
+  border-radius: 3px;
+}
+.Content {
+  height: 750px;
+  width: 750px;
+  margin: 65px;
+  background-color: hsl(180deg 22.13% 47.84%) !important;
+}
+.Image img {
+  width: 125px;
+  height: 125px;
+  border-radius: 100px;
+  object-fit: cover;
+  margin-top: 15px;
+}
+.Intro {
+  margin: 25px;
+}
+.Intro p {
+  font-size: 16px;
+  color: #cfd2d2;
+  font-weight: 100;
+  word-spacing: 50px;
+}
+
+/* contact */
+.ContactWrapper {
+  display: flex;
+}
+.ContactWrapper a {
+  margin: 15px;
+}
+.ContactIcon {
+  font-size: 25px;
+  margin-left: 15px;
+  color: #0a0a0a;
+}

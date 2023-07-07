@@ -1,0 +1,19 @@
+.Table {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  border-collapse: collapse;
+  margin-right: 25px;
+  margin-top: 23px;
+}
+.Table td,
+th {
+  border: 1px #dddddd solid;
+  text-align: left;
+  padding: 8px;
+}
+.striped tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.hover tr:hover {
+  background-color: #616161a8;
+}

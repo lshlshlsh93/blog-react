@@ -1,0 +1,11 @@
+.Profile {
+  margin-right: 25px;
+  cursor: pointer;
+  z-index: 9999;
+}
+.Menu {
+  border-radius: 8px !important;
+}
+.MenuItem {
+  font-size: 13px !important;
+}

@@ -1,0 +1,9 @@
+.CategorySection {
+  min-height: 560px;
+}
+.CategoryContainer {
+  margin: 55px !important;
+}
+.Item {
+  margin-right: 5px;
+}
